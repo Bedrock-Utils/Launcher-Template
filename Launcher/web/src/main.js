@@ -334,5 +334,5 @@ function setEmoji(emoji, size=20) {
 }
 
 function setLink(link, text) {
-  return `<a href='${link}'>${text}</a>`;
+  return `<a href='${link}' target='_blank'>${text}</a>`;
 }
