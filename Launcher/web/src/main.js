@@ -319,10 +319,9 @@ function isMobile() {
 
 function openMinecraft() {
   const { ip, port } = server;
-  const target = isMobile() ? "_blank" : "_self";
   const url = `minecraft://connect?serverUrl=${ip}&serverPort=${port}`;
   setTimeout(() => {
-    window.open(url, target);
+    window.open(url, '_blank');
     setTimeout(() => {
       startBtn.blur();
     }, 2000);
